@@ -65,8 +65,9 @@ class token:
         print("Info dumped")
     def auto_grind(self, channel_id):
         while True:
-            m =self.send_message(1, channel_id)
+            m =self.send_message("`", channel_id)
             self.clear_messages(channel_id,m)
+            time.sleep(60)
             
 
 
